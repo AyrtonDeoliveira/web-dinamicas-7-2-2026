@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+<script>
+
+let nombres = [];
+
+// a) Pedir 6 nombres
+for(let i = 0; i < 6; i++) {
+    nombres.push(prompt("Ingrese un nombre"));
+}
+
+// b) Mostrar array completo
+document.write("<h3>Array original</h3>");
+document.write(nombres.join("<br>"));
+
+console.log("Array original:");
+console.log(nombres);
+
+// c) Ordenar y mostrar
+let ordenados = [...nombres];
+ordenados.sort();
+
+document.write("<h3>Array ordenado</h3>");
+document.write(ordenados.join("<br>"));
+
+console.log("Array ordenado:");
+console.log(ordenados);
+
+// d) Cantidad de elementos
+document.write("<h3>Cantidad de elementos: " + nombres.length + "</h3>");
+
+console.log("Cantidad de elementos:", nombres.length);
+
+// e) Buscar nombre
+let buscar = prompt("Ingrese un nombre para buscar");
+
+let indice = nombres.indexOf(buscar);
+
+if(indice !== -1) {
+    document.write("<p>El nombre '" + buscar + "' fue encontrado en la posición " + indice + "</p>");
+    console.log("Encontrado en posición:", indice);
+} else {
+    document.write("<p>El nombre '" + buscar + "' no fue encontrado</p>");
+    console.log("No encontrado");
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 4</title>
+</head>
+<body>
+
+<script>
+
+let numeros = [];
+let opcion;
+
+do{
+
+    opcion = parseInt(prompt(
+        "1-Agregar\n" +
+        "2-Buscar\n" +
+        "3-Modificar\n" +
+        "4-Eliminar\n" +
+        "5-Insertar\n" +
+        "6-Mostrar\n" +
+        "0-Salir"
+    ));
+
+    switch(opcion){
+
+        case 1:
+            numeros.push(parseFloat(prompt("Número")));
+            break;
+
+        case 2:
+            let buscar = parseFloat(prompt("Número a buscar"));
+            let pos = numeros.indexOf(buscar);
+
+            if(pos >= 0){
+                alert("Encontrado en posición " + pos);
+            }else{
+                alert("No encontrado");
+            }
+            break;
+
+        case 3:
+            let indiceMod = parseInt(prompt("Posición"));
+            let nuevoValor = parseFloat(prompt("Nuevo valor"));
+
+            numeros[indiceMod] = nuevoValor;
+            break;
+
+        case 4:
+            let indiceEliminar = parseInt(prompt("Posición a eliminar"));
+
+            numeros.splice(indiceEliminar,1);
+            break;
+
+        case 5:
+            let valorInsertar = parseFloat(prompt("Valor"));
+            let posicion = parseInt(prompt("Posición"));
+
+            numeros.splice(posicion,0,valorInsertar);
+            break;
+
+        case 6:
+            alert(numeros);
+            break;
+    }
+
+}while(opcion != 0);
+
+</script>
+
+</body>
+</html>

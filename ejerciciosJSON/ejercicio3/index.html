@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 3 — Inventario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>Sistema de inventario</h1>
+    <p>Datos cargados desde <code>inventario.json</code></p>
+  </header>
+
+  <div class="metrics">
+    <div class="metric-card">
+      <div class="label">Artículos</div>
+      <div class="value" id="m-articulos">—</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Stock total</div>
+      <div class="value" id="m-stock">—</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Valor total</div>
+      <div class="value" id="m-valor">—</div>
+    </div>
+    <div class="metric-card">
+      <div class="label">Precio medio</div>
+      <div class="value" id="m-precio">—</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <select id="cat">
+      <option value="todas">Todas las categorías</option>
+    </select>
+    <select id="sort">
+      <option value="nombre">Ordenar por nombre</option>
+      <option value="precioAsc">Precio: menor → mayor</option>
+      <option value="precioDesc">Precio: mayor → menor</option>
+      <option value="stockDesc">Stock: mayor → menor</option>
+    </select>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Fecha ingreso</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

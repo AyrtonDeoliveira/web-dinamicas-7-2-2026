@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+<script>
+
+let sumaManana = 0;
+let sumaTarde = 0;
+let sumaNoche = 0;
+
+for(let i = 0; i < 5; i++){
+    sumaManana += parseInt(prompt("Edad turno mañana"));
+}
+
+for(let i = 0; i < 6; i++){
+    sumaTarde += parseInt(prompt("Edad turno tarde"));
+}
+
+for(let i = 0; i < 11; i++){
+    sumaNoche += parseInt(prompt("Edad turno noche"));
+}
+
+let promManana = sumaManana / 5;
+let promTarde = sumaTarde / 6;
+let promNoche = sumaNoche / 11;
+
+document.write("Promedio mañana: " + promManana + "<br>");
+document.write("Promedio tarde: " + promTarde + "<br>");
+document.write("Promedio noche: " + promNoche + "<br><br>");
+
+if(promManana > promTarde && promManana > promNoche){
+    document.write("El turno mañana tiene el promedio mayor");
+}
+else if(promTarde > promNoche){
+    document.write("El turno tarde tiene el promedio mayor");
+}
+else{
+    document.write("El turno noche tiene el promedio mayor");
+}
+
+</script>
+
+</body>
+</html>

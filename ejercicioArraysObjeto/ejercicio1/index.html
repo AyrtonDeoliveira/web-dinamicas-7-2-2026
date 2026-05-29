@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Liquidación de Sueldos</title>
+
+<style src="css/style.css"></style>
+
+</head>
+<body>
+
+<h1>Liquidación de Sueldos</h1>
+
+<h3>Agregar empleado</h3>
+
+<input type="text" id="nombre" placeholder="Nombre y apellido">
+
+<select id="categoria">
+    <option value="A">Categoría A</option>
+    <option value="B">Categoría B</option>
+    <option value="C">Categoría C</option>
+</select>
+
+<input type="number" id="antiguedad" placeholder="Antigüedad">
+
+<button onclick="agregarEmpleado()">Agregar</button>
+
+<hr>
+
+<button onclick="mostrarTodos()">Mostrar todos</button>
+<button onclick="mostrarCategoriaA()">Categoría A</button>
+<button onclick="mostrarNetos1200()">Netos > 1200</button>
+<button onclick="mostrarAntiguedad6()">Antigüedad > 6</button>
+<button onclick="mostrarEstadisticas()">Estadísticas</button>
+
+<br><br>
+
+<input type="text" id="buscarNombre" placeholder="Buscar empleado">
+<button onclick="buscarEmpleado()">Buscar</button>
+
+<div id="resultado"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

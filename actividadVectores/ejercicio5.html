@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 5</title>
+</head>
+<body>
+
+<script>
+
+let numeros = [];
+
+for(let i = 0; i < 6; i++){
+    numeros.push(parseInt(prompt("Ingrese un número")));
+}
+
+document.write("<h3>Array original</h3>");
+document.write(numeros.join(" - "));
+
+console.log(numeros);
+
+numeros.sort(function(a,b){
+    return a-b;
+});
+
+document.write("<h3>Array ordenado</h3>");
+document.write(numeros.join(" - "));
+
+document.write("<br><br>");
+document.write("Cantidad de elementos: " + numeros.length);
+
+let buscar = parseInt(prompt("Número a buscar"));
+
+let indice = numeros.indexOf(buscar);
+
+if(indice != -1){
+    document.write("<br>Encontrado en posición " + indice);
+}
+else{
+    document.write("<br>No encontrado");
+}
+
+</script>
+
+</body>
+</html>

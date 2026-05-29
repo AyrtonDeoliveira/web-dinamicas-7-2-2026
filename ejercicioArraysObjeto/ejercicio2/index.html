@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuestos de Autos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Presupuestos de Autos</h1>
+        <p>Usa el formulario para seleccionar la acción y ver el resultado en la página.</p>
+    </header>
+
+    <main>
+        <form id="presupuesto-form" class="formulario">
+            <div class="form-row">
+                <label for="accion">Acción</label>
+                <select id="accion" name="accion">
+                    <option value="agregar">Agregar presupuesto</option>
+                    <option value="buscar">Buscar cliente</option>
+                    <option value="caros">Mostrar autos caros</option>
+                </select>
+            </div>
+
+            <div class="form-row" id="fila-vehiculo">
+                <label for="vehiculo">Vehículo</label>
+                <select id="vehiculo" name="vehiculo">
+                    <option value="">Seleccione un vehículo</option>
+                    <option value="Chevrolet Corsa City">Chevrolet Corsa City</option>
+                    <option value="Citroen C4">Citroen C4</option>
+                    <option value="Fiat Pali Weekend">Fiat Pali Weekend</option>
+                    <option value="Fiat Siena">Fiat Siena</option>
+                    <option value="Fort Explorer XLT 4x4">Fort Explorer XLT 4x4</option>
+                    <option value="Fort Ranger XLT 4x4">Fort Ranger XLT 4x4</option>
+                    <option value="Peugeot 306">Peugeot 306</option>
+                    <option value="Renaut Laguna">Renaut Laguna</option>
+                    <option value="Suzuki Fun">Suzuki Fun</option>
+                    <option value="Volswagen Gol">Volswagen Gol</option>
+                    <option value="Volswagen Suran">Volswagen Suran</option>
+                </select>
+            </div>
+
+            <div class="form-row" id="fila-cliente">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" name="cliente" type="text" placeholder="Nombre y apellido">
+            </div>
+
+            <div class="form-row" id="fila-buscar-cliente">
+                <label for="cliente-buscar">Cliente a buscar</label>
+                <input id="cliente-buscar" name="clienteBuscar" type="text" placeholder="Nombre del cliente">
+            </div>
+
+            <div class="form-row form-actions">
+                <button type="submit" class="btn">Ejecutar</button>
+            </div>
+        </form>
+
+        <section id="resultados"></section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

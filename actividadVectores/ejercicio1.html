@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+<script>
+
+let alturas = [];
+let suma = 0;
+
+for(let i = 0; i < 5; i++){
+    alturas[i] = parseFloat(prompt("Ingrese una altura"));
+    suma += alturas[i];
+}
+
+let promedio = suma / 5;
+
+let mayores = 0;
+let menores = 0;
+
+for(let i = 0; i < 5; i++){
+    if(alturas[i] > promedio){
+        mayores++;
+    }else if(alturas[i] < promedio){
+        menores++;
+    }
+}
+
+document.write("Promedio: " + promedio + "<br>");
+document.write("Más altas que el promedio: " + mayores + "<br>");
+document.write("Más bajas que el promedio: " + menores);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+<script>
+
+let numeros = [];
+
+let acumuladoTotal = 0;
+let acumulado36 = 0;
+let mayores50 = 0;
+
+for(let i = 0; i < 8; i++){
+
+    numeros[i] = parseInt(prompt("Ingrese un número"));
+
+    acumuladoTotal += numeros[i];
+
+    if(numeros[i] > 36){
+        acumulado36 += numeros[i];
+    }
+
+    if(numeros[i] > 50){
+        mayores50++;
+    }
+}
+
+document.write("Acumulado total: " + acumuladoTotal + "<br>");
+document.write("Acumulado mayores a 36: " + acumulado36 + "<br>");
+document.write("Cantidad mayores a 50: " + mayores50);
+
+</script>
+
+</body>
+</html>

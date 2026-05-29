@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+<script>
+
+let estilos = ["Jazz", "Blues"];
+
+estilos.push("Rock-n-Roll");
+
+let medio = Math.floor(estilos.length / 2);
+estilos[medio] = "Classics";
+
+alert("Primer elemento eliminado: " + estilos.shift());
+
+estilos.unshift("Rap", "Reggae");
+
+console.log(estilos);
+document.write(estilos.join(" - "));
+
+</script>
+
+</body>
+</html>
