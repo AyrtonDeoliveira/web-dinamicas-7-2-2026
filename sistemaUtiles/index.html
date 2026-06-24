@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Útiles</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <h2>📚 Sistema</h2>
+
+        <button onclick="mostrarTodo()">📊 Mostrar Todo</button>
+        <button onclick="mostrarClientes()">👤 Clientes</button>
+        <button onclick="mostrarCategorias()">📁 Categorías</button>
+        <button onclick="mostrarProductos()">📦 Productos</button>
+        <button onclick="mostrarBoletas()">🧾 Boletas</button>
+        <button onclick="mostrarDetalles()">📄 Detalles</button>
+
+        <hr>
+
+        <button onclick="abrirModal('cliente')">➕ Cliente</button>
+        <button onclick="abrirModal('categoria')">➕ Categoría</button>
+        <button onclick="abrirModal('producto')">➕ Producto</button>
+        <button onclick="abrirModal('boleta')">➕ Boleta</button>
+        <button onclick="abrirModal('detalle')">➕ Detalle</button>
+
+    </aside>
+
+    <main class="contenido">
+
+        <h1>Sistema de Tienda de Útiles</h1>
+
+        <div class="contenedor">
+            <div id="resultado"></div>
+        </div>
+
+    </main>
+
+</div>
+
+<div id="modal" class="modal">
+    <div class="modalContenido">
+
+        <span class="cerrar" onclick="cerrarModal()">✖</span>
+
+        <div id="contenidoModal"></div>
+
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "clientes": [
+    {
+      "codigo": "C001",
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "direccion": "Av. Mitre 123",
+      "razonSocial": "JP Servicios",
+      "ruc": "20123456789"
+    }
+  ],
+
+  "categorias": [
+    {
+      "codigo": "CAT01",
+      "nombre": "Cuadernos"
+    }
+  ],
+
+  "productos": [
+    {
+      "codigo": "P001",
+      "descripcion": "Cuaderno A4",
+      "precio": 2500,
+      "stockMaximo": 100,
+      "stockMinimo": 10,
+      "categoria": "Cuadernos"
+    }
+  ],
+
+  "boletas": [
+    {
+      "numero": "B001",
+      "fecha": "2026-06-16",
+      "total": 2500,
+      "codigoEmpleado": "E001",
+      "codigoCliente": "C001"
+    }
+  ],
+
+  "detallesBoletas": [
+    {
+      "numeroBoleta": "B001",
+      "codigoProducto": "P001",
+      "cantidad": 1
+    }
+  ]
+}
